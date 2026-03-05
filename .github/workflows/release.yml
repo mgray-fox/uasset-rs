@@ -51,4 +51,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact }}
-          path: target/${{ matrix.target }}/release/uasset.exe
+          path: |
+            target/${{ matrix.target }}/release/uasset.exe
+            target/${{ matrix.target }}/release/uasset.pdb
